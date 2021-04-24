@@ -7,6 +7,8 @@
 body{
     background-color: rgb(31, 40, 47);
     overflow-x: hidden;
+    height: 100vh;
+    padding: 0;
 }
 
 /*////////////////// Nav ////////////////////////////////////////////////////*/
