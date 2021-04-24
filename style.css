@@ -6,6 +6,7 @@
 
 body{
     background-color: rgb(31, 40, 47);
+    overflow-x: hidden;
 }
 
 /*////////////////// Nav ////////////////////////////////////////////////////*/
@@ -34,7 +35,6 @@ nav a{
 /*///////////////////// Home Page ///////////////////////////////////////////////*/
 
 #homePage{
-    margin: 20px;
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-gap: 20px;
@@ -80,6 +80,64 @@ nav a{
     margin: 20px;
     border: solid rgb(197, 218, 245) 1px;
     color:  rgb(197, 218, 245);
+}
+
+#centerBar button:hover{
+    border: solid white 2px;
+    background-color: rgb(197, 218, 245);
+    color: rgb(26, 22, 246);
+}
+
+
+/*//////////////// Mise a jour ///////////////*/
+
+#miseAJour{
+    margin: 0 20%;
+    width: 60%;
+    height: 500px;
+    border-radius: 30px;
+    padding: 5% 0;
+    display: flex;
+}
+
+.card{
+    margin: 20px;
+    width: 30%;
+    height: 400px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+    border:2px rgba(255, 255, 255, 0.5) solid ;
+    border-top: 2px rgba(255, 255, 255, 0.5) solid;
+    border-left: 2px rgba(255, 255, 255, 0.5) solid;
+    box-shadow: 20px 20px 5px rgba(0,0,0,0.5);
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 100px;
+    color: rgb(197, 218, 245);
+    backdrop-filter: blur(5px);
+}
+
+.card h2{
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    border-bottom: solid rgb(197, 218, 245) 3px ;
+
+}
+
+.card p{
+    padding: 10px;
+}
+
+
+
+/*//////////////// Footer ///////////////////*/
+
+footer{
+    height: 60px;
+    width: 100%;
+    background-color: rgba(26, 22, 246, 0.322);
+    margin-top: 20px;
+    padding: 20px;
 }
 
 
