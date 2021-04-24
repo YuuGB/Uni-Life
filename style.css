@@ -1,0 +1,87 @@
+/*//////////////// Général //////////////////////////////////////////////////*/
+
+*{
+    margin: 0;
+}
+
+body{
+    background-color: rgb(31, 40, 47);
+}
+
+/*////////////////// Nav ////////////////////////////////////////////////////*/
+
+nav{
+    width: 100%;
+    height: 60px;
+
+}
+
+nav ul{
+    display: flex;
+    float: right;
+    list-style: none;
+}
+
+nav ul li{
+    margin: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color:  rgb(197, 218, 245);
+}
+
+/*///////////////////// Home Page ///////////////////////////////////////////////*/
+
+#homePage{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-gap: 20px;
+    border-radius: 20px;
+    background-color: rgba(26, 22, 246, 0.322);
+}
+
+#leftSideBar{
+    padding: 10% 0px 10% 20px;
+}
+
+#leftSideBar iframe{
+    height: 600px;
+    box-shadow: 20px 20px 5px rgba(0,0,0,0.5);
+}
+
+
+
+#centerBar{
+    text-align: center;
+    border-radius: 20px;
+    padding: 150px 0 0 0;
+}
+
+
+
+#centerBar h1{
+    text-transform: uppercase;
+    color:  rgb(197, 218, 245);
+    font-size: 150px;
+    font-family: 'Zen Dots', cursive;
+}
+
+#centerBar h3{
+    color:  rgb(197, 218, 245);
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+#centerBar button{
+    background-color: transparent;
+    padding: 10px 20px;
+    margin: 20px;
+    border: solid rgb(197, 218, 245) 1px;
+    color:  rgb(197, 218, 245);
+}
+
+
+
+
