@@ -80,6 +80,7 @@ nav a{
     margin: 20px;
     border: solid rgb(197, 218, 245) 1px;
     color:  rgb(197, 218, 245);
+    width: 30vh;
 }
 
 #centerBar button:hover{
@@ -138,6 +139,13 @@ footer{
     background-color: rgba(26, 22, 246, 0.322);
     margin-top: 20px;
     padding: 20px;
+    display: flex;
+    padding-left: 65%;
+}
+
+footer h5{
+    margin: 20px;
+    color:rgb(197, 218, 245);
 }
 
 
