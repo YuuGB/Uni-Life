@@ -45,7 +45,7 @@ nav a{
 /*///////////////////// Home Page ///////////////////////////////////////////////*/
 
 #homePage{
-    margin-top: 60px;
+    margin-top: 0px;
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-gap: 20px;
@@ -154,17 +154,17 @@ nav a{
 /*//////////////// Footer ///////////////////*/
 
 footer{
-    height: 60px;
+    height: 20px;
     width: 100%;
     background-color: rgba(26, 22, 246, 0.322);
     margin-top: 20px;
-    padding: 20px;
+    padding: 10px;
     display: flex;
     padding-left: 65%;
 }
 
 footer h5{
-    margin: 20px;
+    margin: 0px 10px;
     color:rgb(197, 218, 245);
 }
 
