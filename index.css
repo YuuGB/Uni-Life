@@ -152,13 +152,14 @@ nav a{
 /*//////////////// Footer ///////////////////*/
 
 footer{
-    height: 20px;
+    height: 30px;
     width: 100%;
     background-color: rgba(26, 22, 246, 0.322);
     margin-top: 20px;
     padding: 10px;
     display: flex;
-    padding-left: 65%;
+    padding: 0 30%;
+    align-items: center;
 }
 
 footer h5{
