@@ -1,10 +1,9 @@
 
 VanillaTilt.init(document.querySelectorAll(".card"),{
-    max: 0,
-    speed: 400,
+    max: 2,
+    speed: 1000,
     glare : true,
-    "max-glare" : 1,
-    reverse: true,
-    scale: 1.05
+    reverse: false,
+    scale: 1.1
 
 });
