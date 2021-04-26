@@ -59,6 +59,7 @@ nav h3{
     width: 80%;
     height: 65vh;
     display: flex;
+
 }
 
 .profil{
@@ -102,10 +103,7 @@ nav h3{
     margin-left: -20px;
 }
 
-#profilDev{
-    background-image: url("Images/img1.jpg");
-    background-size: cover;
-}
+
 /*//////////////// Footer ///////////////////*/
 
 footer{
