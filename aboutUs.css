@@ -52,86 +52,60 @@ nav h3{
     font-family: 'Zen Dots', cursive;
 }
 
+/*/////////////////// About us ///////////////////*/
+
 #aboutUs{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 100%;
-    position : absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -45%);
-    z-index: 0;
-    transition: 2s;
-    width: 100%;
-}
-
-#container{
-    background: rgba(0,0,0,0.8);
+    margin: 10% 10%;
     width: 80%;
-    height: 80vh;
+    height: 65vh;
+    display: flex;
+}
+
+.profil{
+    background-color: rgb(31, 40, 47);
+    border: 2px solid rgba(26, 22, 246, 0.322);
+    width: 50vh;
+    margin: 3% ;
+    height: 50vh;
+    padding: 0;
     position: relative;
-    transition: 9s;
+    overflow: hidden;
 }
 
-#container .clip{
+.profilContenu{
     position: absolute;
-    top: 0;
-    left: 0;
+    bottom: -80px;
+    background: linear-gradient(rgba(0,0,0,0.1) , rgba(0,0,0,0.9));
     width: 100%;
-    height: 100%;
-    transition: 9s;
-}
-
-#container .clip.clip1{
-    background-image: url(Images/img1.jpg);
-    background-size: cover;
-    clip-path: inset(0 50% 0 0);
-    
-    transition: 9s;
-}
-
-#container .clip.clip2{
-    background-image: url(Images/img2.jpg);
-    background-size: cover;
-    clip-path: inset(0 0 0 50%);
-    transition: 9s;
-}
-
-
-
-#container:hover .clip{
-    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
-    transition: 9s;
-}
-
-#container .clip:hover{
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    
-    transition: 9s;
-}
-
-#container .content{
-    position: absolute;
-    bottom: -300px;
-    left: 10px;
-    width : 60vmax;
-    opacity:0% ;
-    background-color: rgba(255, 255, 255, 0.85) ;
-    color: black;
+    height: 45%;
+    color: rgb(197, 218, 245);
+    padding-top: 5px;
     transition: 1s;
+    
+    text-align: center;
 }
 
-#container .clip:hover .content{
+.profilContenu h3{
+    margin-bottom: 20px;
+}
+
+.profil:hover .profilContenu{
+    bottom: 0;
+}
+
+.profilContenu  img {
+    width: 40px;
+    height: 40px;
     position: absolute;
     bottom: 10px;
-    left: 10px;
-    width : 60vmax;
-    opacity:100% ;
-    background-color: rgba(255, 255, 255, 0.85) ;
-    color: black;
+    left: 50%;
+    margin-left: -20px;
 }
 
+#profilDev{
+    background-image: url("Images/img1.jpg");
+    background-size: cover;
+}
 /*//////////////// Footer ///////////////////*/
 
 footer{

@@ -2,6 +2,7 @@
 
 *{
     margin: 0;
+    scrollbar-color:  rgba(26, 22, 246, 0.322) rgb(31, 40, 47);
 }
 
 body{
@@ -61,12 +62,7 @@ nav a{
     box-shadow: 20px 20px 5px rgba(0,0,0,0.5);
 }
 
-#leftSideBar #iframeServeur{
-    width: 200px; 
-    height: 180px;
-    overflow-y: scroll;
-    margin-left: 75px;
-}
+
 
 
 
