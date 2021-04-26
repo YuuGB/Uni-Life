@@ -52,15 +52,22 @@ nav form{
     padding-top: 100px;
     align-items: center;
     position: absolute;
+    right: -600px;
     backdrop-filter: blur(5px);
     z-index: 1;
     nav-index: 1;
     border-radius: 0 0 0 20px;
+    transition: 1s;
 }
 
 nav input{
     margin-bottom: 100px;
     width: 200px;
+}
+
+nav .hidden{
+    transform: translateX(-600px);
+    transition: 1s;
 }
 
 /*///////////////////// Home Page ///////////////////////////////////////////////*/

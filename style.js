@@ -7,3 +7,17 @@ VanillaTilt.init(document.querySelectorAll(".card"),{
     scale: 1.1
 
 });
+
+let menu = document.getElementById("formulaireConnexion");
+let menuOpened = false;
+
+function clickMenu() {
+    
+    if (menuOpened == true){
+        menu.classList.add("hidden");
+        menuOpened = false;
+    } else{
+        menu.classList.remove("hidden");
+        menuOpened = true;
+    }
+}
