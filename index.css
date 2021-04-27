@@ -70,6 +70,12 @@ nav .hidden{
     transition: 1s;
 }
 
+#boutonEnregistrement{
+    border: none;
+    background: transparent;
+    color: white;
+}
+
 /*///////////////////// Home Page ///////////////////////////////////////////////*/
 
 #homePage{
@@ -130,15 +136,55 @@ nav .hidden{
     color: rgb(26, 22, 246);
 }
 
+/*///////////////// Media ////////////////////*/
+
+#media{
+    width: 100%;
+    height: 600px;
+    background-image: url("Images/wallpaper/arma01.jpg");
+    background-size: 100% 600px;
+    background-repeat: no-repeat;
+    margin: 80px auto;
+    z-index: -2;
+    position: relative;
+}
+
+#containerMedia{
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(3px);
+    z-index: -2;
+    text-align: center;
+}
+
+#containerMedia h1{
+    position: relative;
+    top: 30%;
+    font-size: 50px;
+    color: rgb(197, 218, 245);
+    text-shadow: 1px 0 10px black;
+    text-transform: uppercase;
+    font-family: 'Zen Dots', cursive;
+}
+
+#containerMedia h3{
+    position: relative;
+    top: 40%;
+    font-size: 50px;
+    color: rgb(197, 218, 245);
+    text-shadow: 1px 0 10px black;
+    font-family: 'Dancing Script', cursive;
+}
 
 /*//////////////// Mise a jour ///////////////*/
 
 #miseAJour{
-    margin: 0 20%;
+    margin: 0 auto 80px auto; 
     width: 60%;
     height: 500px;
     border-radius: 30px;
-    padding: 5% 0;
+    padding: 0 0;
     display: flex;
 }
 

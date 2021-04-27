@@ -21,3 +21,9 @@ function clickMenu() {
         menuOpened = true;
     }
 }
+
+/*/////// Temporaire //////*/
+
+document.querySelector("#boutonTemporaire").addEventListener("click", function(event){
+    event.preventDefault();
+})
