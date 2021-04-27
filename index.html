@@ -21,11 +21,21 @@
             <form id="formulaireConnexion">
                 <h2>Uni-Life</h2>
                 <section>
-                    <input id="input1" type="text" placeholder="Nom d'utilisateur" name="pseudo">
-                    <input id="input2" type="text" placeholder="Mot de passe" name="mdp">
+                    <input class="input1" type="text" placeholder="Nom d'utilisateur" name="pseudo">
+                    <input class="input2" type="text" placeholder="Mot de passe" name="mdp">
                 </section>
-                <button  id="boutonTemporaire">Connexion</button>
-                <p>Vous n'avez pas encore de compte? <button id="boutonEnregistrement">Rejoignez-nous!</button></p>
+                <button  class="boutonTemporaire">Connexion</button>
+                <p>Vous n'avez pas encore de compte? <button class="boutonEnregistrement"  onclick="enregistrement()">Rejoignez-nous!</button></p>
+            </form>
+            <form id="formulaireEnregistrement">
+                <h2>Uni-Life</h2>
+                <section>
+                    <input class="input1" type="text" placeholder="Nom d'utilisateur">
+                    <input class="input2" type="text" placeholder="Mot de passe" >
+                    <input class="input3" type="email" placeholder="Adresse mail">
+                </section>
+                <button  class="boutonTemporaire" id="boutonTempoConnexion">Enregistrement</button>
+                <p>Vous avez déjà un compte?<button class="boutonEnregistrement" id="boutonConnexion" onclick="connexion(event)">Connectez-vous!</button></p>
             </form>
         </nav>
 
@@ -50,6 +60,7 @@
         </div>
 
         <div id="media">
+            <img id="slider" src="Images/arma01.jpg">
             <div id="containerMedia">
                 <h1>Bienvenue a Uni-Life</h1>
                 <h3>Votre vie, Vos règles!</h3>
@@ -78,7 +89,7 @@
             
             <h5>Uni-life by Artoria & XuniX</h5>
             <h5>Site web by: Sadk "YuuGB" Théo saïd</h5>
-            <h5>Mentions légales</h5>
+            <h5><a href="mentionsLegale.html">Mentions légales</a></h5>
 
         </footer>
 

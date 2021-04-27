@@ -43,7 +43,7 @@ nav a{
     color:  rgb(197, 218, 245);
 }
 
-nav form{
+nav #formulaireConnexion{
     display: flex;
     flex-direction: column;
     width: 600px;
@@ -60,9 +60,7 @@ nav form{
     transition: 1s;
 }
 
-nav form #input1{
-    margin-bottom: 30px;
-    margin-top: 10px;
+nav form .input1{
     background-color: rgb(120, 174, 245);
     color: white;
     width: 150px;
@@ -71,12 +69,11 @@ nav form #input1{
     padding: 5px 10px;
     position: fixed;
     top: 40%;
-    left: 100px;
+    left: 50%;
+    margin-left: -100px;
 }
 
-nav form #input2{
-    margin-bottom: 30px;
-    margin-top: 10px;
+nav form .input2{
     background-color: rgb(120, 174, 245);
     color: white;
     width: 150px;
@@ -84,8 +81,9 @@ nav form #input2{
     border: none;
     padding: 5px 10px;
     position: fixed;
-    top: 40%;
-    right: 100px;
+    top: 50%;
+    left: 50%;
+    margin-left: -100px;
 }
 
 nav .visible{
@@ -93,7 +91,7 @@ nav .visible{
     transition: 1s;
 }
 
-#boutonEnregistrement{
+.boutonEnregistrement{
     border: none;
     background: transparent;
     color: rgb(120, 174, 245);
@@ -106,26 +104,67 @@ nav .visible{
     font-family: 'Zen Dots', cursive;
 }
 
-#formulaireConnexion h3{
-    color:  rgb(120, 174, 245);
-    font-size: 40px;
-    font-family: 'Dancing Script', cursive;
-}
+
 
 #formulaireConnexion p{
     position: fixed;
     bottom: 50px;
 }
 
-#boutonTemporaire{
+.boutonTemporaire{
     background-color: rgb(120, 174, 245);
     border-radius: 20px;
     border: none;
     color: rgb(197, 218, 245);
     position: fixed;
-    top: 60%;
+    top: 70%;
     width: 200px;
 }
+
+nav #formulaireEnregistrement{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.8);
+    padding-top: 50px;
+    align-items: center;
+    position: absolute;
+    right: -600px;
+    backdrop-filter: blur(5px);
+    z-index: 1;
+    nav-index: 1;
+    border-radius: 0 0 0 20px;
+    transition: 1s;
+}
+
+#formulaireEnregistrement h2{
+    text-transform: uppercase;
+    color:  rgb(120, 174, 245);
+    font-size: 50px;
+    font-family: 'Zen Dots', cursive;
+}
+
+
+
+#formulaireEnregistrement p{
+    position: fixed;
+    bottom: 50px;
+}
+
+nav form .input3{
+    background-color: rgb(120, 174, 245);
+    color: white;
+    width: 150px;
+    border-radius: 20px;
+    border: none;
+    padding: 5px 10px;
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    margin-left: -100px;
+}
+
 
 /*///////////////////// Home Page ///////////////////////////////////////////////*/
 
@@ -192,12 +231,17 @@ nav .visible{
 #media{
     width: 100%;
     height: 600px;
-    background-image: url("Images/wallpaper/arma01.jpg");
-    background-size: 100% 600px;
-    background-repeat: no-repeat;
     margin: 80px auto;
     z-index: -2;
     position: relative;
+}
+
+#media img{
+    width: 100%;
+    height: 600px;
+    z-index: -2;
+    float: left;
+    position: inherit;
 }
 
 #containerMedia{
@@ -207,11 +251,13 @@ nav .visible{
     backdrop-filter: blur(3px);
     z-index: -2;
     text-align: center;
+    margin: 80px auto;
 }
 
 #containerMedia h1{
-    position: relative;
-    top: 30%;
+    position: absolute;
+    top: 20%;
+    left: 20px;
     font-size: 50px;
     color: rgb(197, 218, 245);
     text-shadow: 1px 0 10px black;
@@ -220,8 +266,9 @@ nav .visible{
 }
 
 #containerMedia h3{
-    position: relative;
-    top: 40%;
+    position: absolute;
+    top: 30%;
+    left: 20px;
     font-size: 50px;
     color: rgb(197, 218, 245);
     text-shadow: 1px 0 10px black;
@@ -285,6 +332,11 @@ footer{
 
 footer h5{
     margin: 0px 10px;
+    color:rgb(197, 218, 245);
+}
+
+footer a{
+    text-decoration: none;
     color:rgb(197, 218, 245);
 }
 
