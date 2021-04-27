@@ -14,10 +14,10 @@ let menuOpened = false;
 function clickMenu() {
     
     if (menuOpened == true){
-        menu.classList.add("hidden");
+        menu.classList.remove("visible");
         menuOpened = false;
     } else{
-        menu.classList.remove("hidden");
+        menu.classList.add("visible");
         menuOpened = true;
     }
 }
@@ -25,5 +25,9 @@ function clickMenu() {
 /*/////// Temporaire //////*/
 
 document.querySelector("#boutonTemporaire").addEventListener("click", function(event){
+    event.preventDefault();
+})
+
+document.querySelector("#boutonEnregistrement").addEventListener("click", function(event){
     event.preventDefault();
 })

@@ -48,8 +48,8 @@ nav form{
     flex-direction: column;
     width: 600px;
     height: 400px;
-    background: rgba(255, 255, 255, 0.5);
-    padding-top: 100px;
+    background: rgba(255, 255, 255, 0.8);
+    padding-top: 50px;
     align-items: center;
     position: absolute;
     right: -600px;
@@ -60,12 +60,35 @@ nav form{
     transition: 1s;
 }
 
-nav input{
-    margin-bottom: 100px;
-    width: 200px;
+nav form #input1{
+    margin-bottom: 30px;
+    margin-top: 10px;
+    background-color: rgb(120, 174, 245);
+    color: white;
+    width: 150px;
+    border-radius: 20px;
+    border: none;
+    padding: 5px 10px;
+    position: fixed;
+    top: 40%;
+    left: 100px;
 }
 
-nav .hidden{
+nav form #input2{
+    margin-bottom: 30px;
+    margin-top: 10px;
+    background-color: rgb(120, 174, 245);
+    color: white;
+    width: 150px;
+    border-radius: 20px;
+    border: none;
+    padding: 5px 10px;
+    position: fixed;
+    top: 40%;
+    right: 100px;
+}
+
+nav .visible{
     transform: translateX(-600px);
     transition: 1s;
 }
@@ -73,7 +96,35 @@ nav .hidden{
 #boutonEnregistrement{
     border: none;
     background: transparent;
-    color: white;
+    color: rgb(120, 174, 245);
+}
+
+#formulaireConnexion h2{
+    text-transform: uppercase;
+    color:  rgb(120, 174, 245);
+    font-size: 50px;
+    font-family: 'Zen Dots', cursive;
+}
+
+#formulaireConnexion h3{
+    color:  rgb(120, 174, 245);
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+}
+
+#formulaireConnexion p{
+    position: fixed;
+    bottom: 50px;
+}
+
+#boutonTemporaire{
+    background-color: rgb(120, 174, 245);
+    border-radius: 20px;
+    border: none;
+    color: rgb(197, 218, 245);
+    position: fixed;
+    top: 60%;
+    width: 200px;
 }
 
 /*///////////////////// Home Page ///////////////////////////////////////////////*/
