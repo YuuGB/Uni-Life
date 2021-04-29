@@ -254,12 +254,14 @@ nav form .input3{
     width: 30%;
     transition-duration: 800ms;
     border-radius: 10px;
+    box-shadow: 20px 20px 5px rgba(0,0,0,0.5);
 }
 
 #centerBar button:hover{
     border: solid white 2px;
     background-color: rgb(197, 218, 245);
     color: rgb(26, 22, 246);
+    box-shadow: none;
 }
 
 

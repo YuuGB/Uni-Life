@@ -1,2 +1,2 @@
-discord = document.getElementById("leftSideBar");
+
 
