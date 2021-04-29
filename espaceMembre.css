@@ -63,6 +63,7 @@ nav h3{
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+    box-shadow: 20px 20px 5px rgba(0,0,0,0.5);
 }
 
 #container{
@@ -98,12 +99,13 @@ nav h3{
 }
 
 #barreHorizontale2{
-    width: 100%;
+    width: 100% -10px;
     height: 80px;
     background-color: white;
     border-radius: 0 0 20px 20px;
     font-family: 'Zen Dots', cursive;
     font-size: 25px;
+    padding: 10px;
 }
 
 #serigraphie{
