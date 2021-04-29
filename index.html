@@ -2,7 +2,9 @@
 
 <html>
     <head>
+        
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>Uni-Life : Arma 3</title>
         <link rel="stylesheet" type="text/css" href="index.css"></link>
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -16,9 +18,10 @@
                 <li><a href="boutique.html">Boutique</a></li>
                 <li><a href="reglement.html">Règlement</a></li>
                 <li><a href="aboutUs.html">A propos</a></li>
+                <li><a href="espaceMembre.html">Proto Espace Membre</a></li>
                 <li><a onclick="clickMenu()">Connexion</a></li>
             </ul>
-            <form id="formulaireConnexion">
+            <form id="formulaireConnexion" class="hidden">
                 <h2>Uni-Life</h2>
                 <section>
                     <input class="input1" type="text" placeholder="Nom d'utilisateur" name="pseudo">
@@ -27,7 +30,7 @@
                 <button  class="boutonTemporaire">Connexion</button>
                 <p>Vous n'avez pas encore de compte? <button class="boutonEnregistrement"  onclick="enregistrement()">Rejoignez-nous!</button></p>
             </form>
-            <form id="formulaireEnregistrement">
+            <form id="formulaireEnregistrement" class="hidden">
                 <h2>Uni-Life</h2>
                 <section>
                     <input class="input1" type="text" placeholder="Nom d'utilisateur">
@@ -42,8 +45,7 @@
         <div id="homePage">
 
             <div id="leftSideBar">
-                
-                <iframe id="iframeDiscord" src="https://discord.com/widget?id=783523631200075776&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                <iframe src="https://discord.com/widget?id=783523631200075776&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
             </div>
 
             <div id="centerBar">
@@ -53,7 +55,6 @@
                 <button>Discord</button>
                 <button>Teamspeak</button><br>
                 <button>Serveur Arma 3</button><br>
-                <iframe id ="iframeServeur" src="https://cdn.battlemetrics.com/b/horizontal500x80px/10972747.html?foreground=%23EEEEEE&background=%23222222&lines=%23333333&linkColor=%231185ec&chartColor=%23FF0700" frameborder=0  name="ebpyc"></iframe>
                 
             </div>
 
@@ -93,7 +94,6 @@
 
         </footer>
 
-        <script type="text/javascript" src="vanilla-tilt.js"></script>
         <script src="style.js"></script>
         <script src="script.js"></script>
     </body>

@@ -55,8 +55,9 @@ nav h3{
 /*////////////////// Reglement ////////////////////*/
 
 #reglement{
-    margin: 10% 30%;
     color: rgb(197, 218, 245);
+    width: 500px;
+    margin:  100px auto;
 }
 
 #reglement p{
@@ -72,6 +73,8 @@ footer{
     padding: 10px;
     display: flex;
     padding-left: 65%;
+    position: relative;
+    bottom: 0px;
 }
 
 footer h5{

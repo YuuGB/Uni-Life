@@ -1,12 +1,4 @@
 
-VanillaTilt.init(document.querySelectorAll(".card"),{
-    max: 2,
-    speed: 1000,
-    glare : true,
-    reverse: false,
-    scale: 1.1
-
-});
 
 let menu = document.getElementById("formulaireConnexion");
 let menuEnregistrement = document.getElementById("formulaireEnregistrement");
@@ -15,24 +7,23 @@ let menuOpened = false;
 function clickMenu() {
     
     if (menuOpened == true){
-        menu.classList.remove("visible");
-        menuEnregistrement.classList.remove("visible");
+        menu.classList.add("hidden");
+        menuEnregistrement.classList.add("hidden");
         menuOpened = false;
     } else{
-        menu.classList.add("visible");
+        menu.classList.remove("hidden");
         menuOpened = true;
     }
 }
 
 function enregistrement(){
-    menu.classList.remove("visible");
-    menuEnregistrement.classList.add("visible");
+    menu.classList.add("hidden");
+    menuEnregistrement.classList.remove("hidden");
 }
 
 function connexion(){
-    menu.classList.add("visible");
-    menuEnregistrement.classList.remove("visible");
-    event.preventDefault;
+    menu.classList.remove("hidden");
+    menuEnregistrement.classList.add("hidden");
 }
 
 /*/////// Temporaire //////*/
@@ -73,13 +64,10 @@ let nombreImage = 0;
 function Slider(){
     
     let media = document.getElementById("slider");
-    console.log("ok1");
     let imageEnCours = images[nombreImage];
     media.innerHTML = "<img id='slider' src =''>"
     let slider = document.getElementById("slider");
     slider.setAttribute("src", imageEnCours.src );
-    console.log("ok");
-    console.log(images[nombreImage]);
     nombreImage++;
     if (nombreImage < images.length){
     setTimeout(Slider, 2500);
