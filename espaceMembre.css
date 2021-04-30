@@ -57,9 +57,9 @@ nav h3{
 
 #IdMembre{
     background-color: rgb(197, 218, 245);
-    width: 80%;
+    width: 60%;
     margin: 40px auto;
-    height: 550px;
+    height: 50%;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -70,26 +70,29 @@ nav h3{
     display: flex;
     width: 100%;
     flex-wrap: nowrap;
+    height: 500px;
+    overflow: hidden;
 }
 
 #photoIdentite{
     border: 1px solid royalblue;
     background-image: url(Images/profil_vide.jpg);
-    background-size: 45vh 45vh;
-    width: 50vh;
-    height: 50vh;
+    background-size: 100% 100%;
+    width: 30%;
+    height: 80%;
     margin: 20px 0 20px 10px;
 }
 
 #informationsIdentite{
-    width: 80%;
-    height: 50vh;
+    width: 100%;
+    height: 80%;
     margin: 20px 20px;
+    overflow:hidden;
 }
 
 #barreHorizontale1{
     width: 100%;
-    height: 60px;
+    height: 20%;
     background-color: royalblue;
     border-radius: 20px 20px 0 0;
     color: white;
@@ -100,12 +103,15 @@ nav h3{
 
 #barreHorizontale2{
     width: 100% -10px;
-    height: 80px;
+    height: 20%;
     background-color: white;
     border-radius: 0 0 20px 20px;
     font-family: 'Zen Dots', cursive;
     font-size: 25px;
     padding: 10px;
+    position:relative;
+    bottom: 0;
+    overflow: hidden;
 }
 
 #serigraphie{
@@ -144,9 +150,9 @@ footer{
     width: 100%;
     background-color: rgba(26, 22, 246, 0.322);
     margin-top: 20px;
-    padding: 10px;
+    padding: 10px 30%;
     display: flex;
-    padding-left: 65%;
+    text-align: center;
     position: fixed;
     bottom: 0;
 }

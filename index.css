@@ -1,6 +1,7 @@
 /*//////////////// Général //////////////////////////////////////////////////*/
 html{
     height: 100%;
+    width: 100%;
     flex-grow: 1;
 }
 
@@ -11,7 +12,6 @@ html{
 
 body{
     background-color: rgb(31, 40, 47);
-    overflow-x: hidden;
     padding: 0;
     width: 100%;
     min-height: 100%;
@@ -27,17 +27,16 @@ body{
 /*////////////////// Nav ////////////////////////////////////////////////////*/
 
 nav{
-    width: 800px;
+    width: 600px;
     position: fixed;
-    right: 0px;
+    right: 0;
     top: 0;
-
+    z-index: 4;
 }
 
 nav ul{
     display: flex;
     list-style: none;
-    z-index: 1;
     background-color: rgba(31, 40, 47, 0.5);
     backdrop-filter: blur(5px);
     
@@ -272,29 +271,54 @@ nav form .input3{
     width: 100%;
     height: 600px;
     margin: 80px auto;
-    z-index: -2;
     position: relative;
 }
 
 #media img{
-    width: 100%;
+    width: 70%;
     height: 600px;
-    z-index: -2;
-    float: left;
-    position: inherit;
+    position: absolute;
+    top: 0;
+    left: 15%;
+    z-index: 1;
 }
 
-#containerMedia{
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(3px);
-    z-index: -2;
+
+
+#containerMedia2{
+    position: absolute;
+    top: 0;
+    left: 15%;
+    width: 70%;
+    height: 600px;
     text-align: center;
-    margin: 80px auto;
+    z-index: 2;
 }
 
-#containerMedia h1{
+#container1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 600px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(3px);
+    text-align: center;
+    z-index: 3;
+}
+
+#container3{
+    position: absolute;
+    top: 0;
+    left: 85%;
+    width: 15%;
+    height: 600px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(3px);
+    text-align: center;
+    z-index: 3;
+}
+#containerMedia2 h1{
     position: absolute;
     top: 20%;
     left: 20px;
@@ -305,7 +329,7 @@ nav form .input3{
     font-family: 'Zen Dots', cursive;
 }
 
-#containerMedia h3{
+#containerMedia2 h3{
     position: absolute;
     top: 30%;
     left: 20px;
@@ -320,7 +344,7 @@ nav form .input3{
 #miseAJour{
     margin: 40px auto;
     width: 80%;
-    height: 500px;
+    height: 600px;
     border-radius: 30px;
     padding: 0 0;
     display: flex;
@@ -328,8 +352,8 @@ nav form .input3{
 
 .card{
     margin: 0 20px;
-    width: 50%;
-    height: 300px;
+    width: 30%;
+    height: 80%;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.5);
     border:2px rgba(255, 255, 255, 0.5) solid ;
@@ -360,21 +384,22 @@ nav form .input3{
 /*//////////////// Footer ///////////////////*/
 
 footer{
-    height: 30px;
+    height: 40px;
+    width: 100%;
     background-color: rgba(26, 22, 246, 0.322);
-    margin-top: 20px;
-    padding: 10px;
+    margin: 20px 0;
     display: flex;
-    padding: 0 30%;
+    justify-content: center;
     align-items: center;
     position: relative;
-    bottom: 0;
+    bottom: 0; left: 0; right: 0;
 }
 
 footer h5{
     margin: 0px 10px;
     color:rgb(197, 218, 245);
 }
+
 
 footer a{
     text-decoration: none;

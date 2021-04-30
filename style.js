@@ -30,6 +30,7 @@ function connexion(){
 
 document.querySelector(".boutonTemporaire").addEventListener("click", function(event){
     event.preventDefault();
+    location.href = "espaceMembre.html";
 })
 
 document.querySelector(".boutonEnregistrement").addEventListener("click", function(event){
@@ -60,6 +61,10 @@ let images = [
 let nombreImage = 0;
 
 
+
+let cache = document.getElementById("cache");
+let slider = document.getElementById("slider");
+let imageEnCours = images[nombreImage];
 
 function Slider(){
     
