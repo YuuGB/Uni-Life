@@ -4,11 +4,19 @@
     margin: 0;
 }
 
+html{
+    width: 100%;
+    height: 100%;
+}
+
 body{
     background-color: rgb(31, 40, 47);
-    overflow: hidden;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     padding: 0;
+    flex-grow: 1;
+    position: absolute;
+    top: 0;
 }
 
 /*////////////////// Nav ////////////////////////////////////////////////////*/
@@ -55,9 +63,9 @@ nav h3{
 /*/////////////////// About us ///////////////////*/
 
 #aboutUs{
-    margin: 10% 10%;
+    margin:15% auto;
     width: 80%;
-    height: 65vh;
+    height: 50%;
     display: flex;
 
 }
@@ -65,9 +73,9 @@ nav h3{
 .profil{
     background-color: rgb(31, 40, 47);
     border: 2px solid rgba(26, 22, 246, 0.322);
-    width: 400px;
+    width: 100%;
     margin: 3% ;
-    height: 50vh;
+    height: 70%;
     padding: 0;
     position: relative;
     overflow: hidden;
@@ -107,18 +115,24 @@ nav h3{
 /*//////////////// Footer ///////////////////*/
 
 footer{
-    height: 20px;
+    height: 40px;
     width: 100%;
     background-color: rgba(26, 22, 246, 0.322);
-    margin-top: 20px;
-    padding: 10px;
+    margin: 20px 0 0 0;
     display: flex;
-    padding-left: 65%;
-    position: fixed;
-    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
 }
 
 footer h5{
     margin: 0px 10px;
+    color:rgb(197, 218, 245);
+}
+
+
+footer a{
+    text-decoration: none;
     color:rgb(197, 218, 245);
 }

@@ -56,28 +56,42 @@ nav h3{
 
 #reglement{
     color: rgb(197, 218, 245);
-    width: 500px;
-    margin:  100px auto;
+    width: 100%;
+    margin: 100px auto;
 }
 
 #reglement p{
-    margin-bottom: 20px;
+    width: 500px;
+    margin:  20px auto;
+}
+
+#reglement h3{
+    text-align: center;
+    width: 500px;
+    margin:  0 auto;
+    font-family: 'Zen Dots', cursive;
 }
 /*//////////////// Footer ///////////////////*/
 
 footer{
-    height: 20px;
+    height: 40px;
     width: 100%;
     background-color: rgba(26, 22, 246, 0.322);
-    margin-top: 20px;
-    padding: 10px;
+    margin: 20px 0;
     display: flex;
-    padding-left: 65%;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    bottom: 0px;
+    bottom: 0; left: 0; right: 0;
 }
 
 footer h5{
     margin: 0px 10px;
+    color:rgb(197, 218, 245);
+}
+
+
+footer a{
+    text-decoration: none;
     color:rgb(197, 218, 245);
 }

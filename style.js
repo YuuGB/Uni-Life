@@ -74,13 +74,11 @@ function Slider(){
     let slider = document.getElementById("slider");
     slider.setAttribute("src", imageEnCours.src );
     nombreImage++;
-    if (nombreImage < images.length){
-    setTimeout(Slider, 2500);
-    } else {
+    if (nombreImage == images.length){
         nombreImage = 0;
-    setTimeout(Slider, 2500);
+    ;
     }
 
 }
 
-window.onload = Slider();
+window.onload = setInterval(Slider, 2500);
