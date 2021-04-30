@@ -406,25 +406,5 @@ footer a{
     color:rgb(197, 218, 245);
 }
 
-/*//////////////////////////////////////////////////////////////////// Smartphone /////////////////////////////////////////*/
-
-@media screen and (max-width: 480px) {
-
-    body{
-        background-color: red;
-    }
-
-}
-
-/*///////////////////////////////////////////////////// Tablette portrait ///////////////////////////////////////////////////*/
-
-@media screen and (min-width: 480px) and (max-width: 768px) {
-
-    body{
-        background-color: green;
-    }
-
-}
-
 
 
