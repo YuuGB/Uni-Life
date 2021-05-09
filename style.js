@@ -107,4 +107,10 @@ burger.addEventListener("click", function(){
     bar1.classList.toggle("bar1Open");
     bar2.classList.toggle("bar2Open");
     bar3.classList.toggle("bar3Open");
+
+    if(menuOpened == true){
+        menuEnregistrement.classList.add("hidden");
+        menu.classList.add("hidden");
+        menuOpened = false;
+    }
 })
