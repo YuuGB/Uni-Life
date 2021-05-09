@@ -419,7 +419,7 @@ html{
 }
 
 body{
-    background-color: rgb(31, 40, 47);
+    background-color: red;
     padding: 0;
     width: auto;
     min-height: 100%;
