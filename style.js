@@ -45,7 +45,7 @@ document.querySelector("#boutonTempoConnexion").addEventListener("click", functi
     event.preventDefault();
 })
 
-/*/////// Test //////*/
+/*/////// Slider //////*/
 class Images {
     constructor (src){
         this.src = src;
@@ -82,3 +82,29 @@ function Slider(){
 }
 
 window.onload = setInterval(Slider, 2500);
+
+/*//////////////// Menu mobile ///////////////////////*/
+let burger = document.getElementById("navMobile");
+
+if (screen.width >766){
+    burger.classList.add("navHidden");
+}
+
+if (screen.width < 767){
+    let nav = document.getElementById("nav");
+    nav.classList.add("navHidden");
+}
+
+
+
+burger.addEventListener("click", function(){
+    nav.classList.toggle("navHidden");
+
+    let bar1 = document.getElementById("bar1");
+    let bar2 = document.getElementById("bar2");
+    let bar3 = document.getElementById("bar3");
+
+    bar1.classList.toggle("bar1Open");
+    bar2.classList.toggle("bar2Open");
+    bar3.classList.toggle("bar3Open");
+})

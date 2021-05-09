@@ -27,9 +27,10 @@ nav{
     width: 600px;
     position: fixed;
     right: 0;
-    top: 0;
     z-index: 4;
 }
+
+
 
 nav ul{
     display: flex;
@@ -201,7 +202,6 @@ nav form .input3{
 /*///////////////////// Home Page ///////////////////////////////////////////////*/
 
 #homePage{
-    margin-top: 60px;
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-gap: 20px;
@@ -419,7 +419,7 @@ html{
 }
 
 body{
-    background-color: red;
+    background-color: rgb(31, 40, 47);
     padding: 0;
     width: auto;
     min-height: 100%;
@@ -431,16 +431,40 @@ body{
 
 /*////////////////// Nav ////////////////////////////////////////////////////*/
 
-nav{
-    width: auto;
+#nav{
+    width: 100%;
     position: fixed;
     left: 0;
-    top: 0;
+    top: none;
+    bottom: 0;
     z-index: 4;
+    transition: 1s;
 }
+
+.navHidden{
+    transform: translateY(192px);
+    transition: 1s;
+}
+
+.bar1Open{
+    transform: translate(-10px, 10px) rotate(45deg); 
+    transition: 1s;
+}
+
+.bar2Open{
+    opacity: 0;
+    transition: 1s;
+}
+
+.bar3Open{
+    transform: translate(-10px , -10px) rotate(-45deg);
+    transition: 1s;
+}
+
 
 nav ul{
     display: flex;
+    flex-direction: column;
     list-style: none;
     background-color: rgba(31, 40, 47, 0.5);
     backdrop-filter: blur(5px);
@@ -456,7 +480,6 @@ nav ul li{
 nav a{
     text-decoration: none;
     color:  rgb(197, 218, 245);
-    font-size: 14px;
 }
 
 #formulaireConnexion{
@@ -607,11 +630,30 @@ nav form .input3{
     outline: none;
 }
 
+#navMobile{
+    width: 60px ;
+    height: 60px;
+    position: relative;
+    left: 50%;
+    margin-left: -30px;
+    
+}
+
+.bar{
+    width: 50%;
+    height: 5px;
+    background-color: rgb(197, 218, 245);
+    margin: 5px 0;
+    margin-left: -7.5px;
+    border-radius: 5px;
+    position: relative;
+    left: 50%;
+    transition: 1s;
+}
 
 /*///////////////////// Home Page ///////////////////////////////////////////////*/
 
 #homePage{
-    margin-top: 60px;
     display: flex;
     flex-direction: column-reverse;
     background-color: rgba(26, 22, 246, 0.322);
@@ -799,7 +841,7 @@ footer{
     justify-content: center;
     align-items: center;
     position: relative;
-    bottom: 0; left: 0; right: 0;
+    bottom: 60px ; left: 0; right: 0;
 }
 
 footer h5{
