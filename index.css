@@ -833,7 +833,7 @@ nav form .input3{
 /*//////////////// Footer ///////////////////*/
 
 footer{
-    height: 40px;
+    height: 60px;
     width: 100%;
     background-color: rgba(26, 22, 246, 0.322);
     margin: 20px 0;
@@ -841,7 +841,7 @@ footer{
     justify-content: center;
     align-items: center;
     position: relative;
-    bottom: 60px ; left: 0; right: 0;
+    bottom: 80px ; left: 0; right: 0;
 }
 
 footer h5{
