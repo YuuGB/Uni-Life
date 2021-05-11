@@ -3,6 +3,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
         <title>Uni-Life : Arma 3</title>
         <link rel="stylesheet" type="text/css" href="boutique.css"></link>
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -10,16 +11,44 @@
     </head>
 
     <body>
+        <nav id="banner" ><h3>Uni-Life</h3></nav>
         <nav>
-            <h3>Uni-Life</h3>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="boutique.html">Boutique</a></li>
-                <li><a href="reglement.html">Règlement</a></li>
-                <li><a href="aboutUs.html">A propos</a></li>
-                <li><a href="#">Connexion</a></li>
-            </ul>
-        </nav>
+            
+            <nav id="nav">
+                <ul>
+                    <nav id="navMobile">
+                        <div class="bar" id="bar1"></div>
+                        <div class="bar" id="bar2"></div>
+                        <div class="bar" id="bar3"></div>
+                    </nav>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="boutique.html">Boutique</a></li>
+                    <li><a href="reglement.html">Règlement</a></li>
+                    <li><a href="aboutUs.html">A propos</a></li>
+                    <li><a onclick="clickMenu()">Connexion</a></li>
+                </ul>
+    
+            </nav>
+                <form id="formulaireConnexion" class="hidden">
+                    <h2>Uni-Life</h2>
+                    <section>
+                        <input class="input1" type="text" placeholder="Nom d'utilisateur" name="pseudo">
+                        <input class="input2" type="password" placeholder="Mot de passe" name="mdp">
+                    </section>
+                    <button  class="boutonTemporaire">Connexion</button>
+                    <p>Vous n'avez pas encore de compte? <button class="boutonEnregistrement"  onclick="enregistrement()">Rejoignez-nous!</button></p>
+                </form>
+                <form id="formulaireEnregistrement" class="hidden">
+                    <h2>Uni-Life</h2>
+                    <section>
+                        <input class="input1" type="text" placeholder="Nom d'utilisateur">
+                        <input class="input2" type="text" placeholder="Mot de passe" >
+                        <input class="input3" type="email" placeholder="Adresse mail">
+                    </section>
+                    <button  class="boutonTemporaire" id="boutonTempoConnexion">Enregistrement</button>
+                    <p>Vous avez déjà un compte?<button class="boutonEnregistrement" id="boutonConnexion" onclick="connexion(event)">Connectez-vous!</button></p>
+                </form>
+            </nav>
 
         <div id="boutiquePage">
 
@@ -67,6 +96,7 @@
             <h5>Mentions légales</h5>
 
         </footer>
+        <script src="style.js"></script>
         <script src="script.js"></script>
     </body>
 
