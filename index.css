@@ -48,6 +48,8 @@ nav ul li{
 nav a{
     text-decoration: none;
     color:  rgb(197, 218, 245);
+    font-family: 'Zen Dots', cursive;
+    font-size: 12px;
 }
 
 #formulaireConnexion{
@@ -771,8 +773,8 @@ nav form .input3{
 #containerMedia2 h1{
     position: absolute;
     top: 20%;
-    left: 20px;
-    font-size: 30px;
+    left: 10px;
+    font-size: 20px;
     color: rgb(197, 218, 245);
     text-shadow: 1px 0 10px black;
     text-transform: uppercase;
@@ -781,8 +783,8 @@ nav form .input3{
 
 #containerMedia2 h3{
     position: absolute;
-    top: 35%;
-    left: 40px;
+    top: 55%;
+    left: 25px;
     font-size: 25px;
     color: rgb(197, 218, 245);
     text-shadow: 1px 0 10px black;

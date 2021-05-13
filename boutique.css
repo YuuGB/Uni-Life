@@ -567,6 +567,10 @@ nav form .input3{
 
 /*//////////////////Boutique /////////////////*/
 
+.closed{
+    height: 30px;
+}
+
 #boutiquePage{
     width: 90%;
     margin: 20px auto;
@@ -616,6 +620,20 @@ nav form .input3{
     color: gray;
     text-decoration: line-through;
 }
+
+.hidden{
+    opacity: 0;
+    position: relative;
+    left: -300px;
+    transition: 1s;
+}
+
+p {
+    transition: 1s;
+    opacity: 1;
+}
+
+
 
 
 /*//////////////// Footer ///////////////////*/
